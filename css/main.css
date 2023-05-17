@@ -1,0 +1,64 @@
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-menu{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f1f1f1;
+}
+.main-menu-item{
+    list-style: none; /*list-style: none; = li/li teglarining nuqtalari olib tawadi*/
+    display: inline-block;
+    position: relative;
+
+}
+.main-menu-item a{
+    text-decoration: none;
+    color: #808080;
+    padding: 20px 15px;
+    display: inline-block;
+}
+.main-menu-item:hover a{
+    background-color: royalblue;
+    color: white;
+}
+.sub-menu{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    display: none;
+}
+.sub-menu-item{
+    list-style: none;
+    color: #808080;
+    padding: 10px 15px;
+    position: relative;
+}
+.sub-menu-item:hover{
+    color: white;
+    background-color: rgba(65,105,225,0.6);
+}
+.main-menu-item:hover > .sub-menu{
+    display: none;
+}
+.sub-menu-item > .sub-menu{
+    left: 100%;
+    top: 0;
+}
+.sub-menu-item:hover .sub-menu{
+    display: block;
+}
+.main-menu-item:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: royalblue;
+    position: relative;
+    left: 25%;
+    bottom: -48px;
+
+}
