@@ -1,6 +1,7 @@
 .wrap{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 .main-menu{
     margin: 0;
@@ -8,10 +9,9 @@
     border: 1px solid #f1f1f1;
 }
 .main-menu-item{
-    list-style: none; /*list-style: none; = li/li teglarining nuqtalari olib tawadi*/
+    list-style: none; /* list-style: none; => ul/li teglarining nuqtalarini olib tashlaydi */
     display: inline-block;
     position: relative;
-
 }
 .main-menu-item a{
     text-decoration: none;
@@ -21,7 +21,7 @@
 }
 .main-menu-item:hover a{
     background-color: royalblue;
-    color: white;
+    color: #ffffff;
 }
 .sub-menu{
     margin: 0;
@@ -53,12 +53,25 @@
 .sub-menu-item:hover .sub-menu{
     display: block;
 }
-.main-menu-item:before {
+.main-menu-item:before{
     content: '';
-    border: 10px solid transparent;
+    border: 20px solid transparent;
     border-top-color: royalblue;
-    position: relative;
+    position: absolute;
     left: 25%;
-    bottom: -48px;
-
+    bottom: -40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
